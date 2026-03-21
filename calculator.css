@@ -1,0 +1,120 @@
+body {
+  margin: 0; /* Remove as margens padrão do navegador */
+  display: flex; /* Ativa o modo Flexbox para alinhar elementos filhos */
+  justify-content: center; /* Alinha a calculadora horizontalmente no centro */
+  align-items: center; /* Alinha a calculadora verticalmente no centro */
+  background-color: hsl(249, 81%, 61%);
+}
+
+#calculator {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: hsl(0, 0%, 45%);
+  border-radius: 6px; /* Borda estilizada com um quadrado um pouco arredondado nos cantos */
+  max-width: 320px; /* Largura máxima da área do calculator */
+  overflow: hidden;
+  padding: 18px; /* Pra aumentar ou diminuir, ajustando a área do corpo da calculadora com padding */
+  margin: 29px auto; /* Define uma margem de altura auto para a calculadora ficar na página */
+  border-radius: 15px; /* Define o raio da borda do corpo da mesma */
+  border: 8px solid black; /* 👈 borda preta */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Display: a parte cinza mais escura da Calculadora */
+#display {
+  margin-top: 20px; /* Para deixar o display mais alto ou mais abaixo no corpo da calculadora */
+  height: 70px;
+  padding: 15px;
+  margin-bottom: 20px; /* Espaço entre o display e as teclas */
+
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; /* 🔹 centraliza */
+
+  font-size: 2em;
+  font-weight: bold; /* Para ficar em Negrito */
+  text-align: left;
+  border: none;
+  background-color: hsl(0, 2%, 21%);
+  color: white;
+  border-radius: 5px;
+  box-sizing: border-box; /* Garante que o padding não quebre o layout */
+  transition: background-color 0.2s;
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+button {
+  width: 100%;
+  height: 60px;
+  background-color: hsl(0, 0%, 30%);
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: transform 0.12s ease, box-shadow 0.12s ease; /* Cria uma sombra de leve ao transicionar para o hover */
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 40%);
+  transform: translateY(-2px); /* As teclas de digitos sobem só um pouquinho */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Cria um sombreamento ao subirem */
+}
+
+button:active {
+  background-color: hsl(0, 0%, 50%);
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.operator-btn {
+  background-color: #f39c12;
+  transition: all 0.2s ease;
+}
+
+.operator-btn:hover {
+  background-color: #e6c926;
+}
+
+.operator-btn:active {
+  background-color: #f0d645;
+}
+
+.equal-btn {
+  background-color: #27ae60; /* Cor de destaque para o igual */
+  transition: all 0.2s ease;
+}
+
+.equal-btn:hover {
+  transition: all 0.2s ease;
+  background-color: #0fd831;
+}
+
+.equal-btn:active {
+  background-color: #0cf833;
+}
+.delete-btn {
+  background-color: #e53935;
+  transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #ff5252;
+}
+
+.delete-btn:active {
+  background-color: #b71c1c;
+}
+
+.undo-btn:hover {
+  background-color: #e53935;
+}
+
+.Space-btn:hover {
+  background-color: blue;
+}
