@@ -22,3 +22,6 @@ JavaScript (Vanilla): Lógica de manipulação do DOM e processamento de cálcul
 
 Como visualizar:
 Basta abrir o arquivo index.html em qualquer navegador ou acessar o link da preview no CodeSandbox.
+
+Desenvolvido por [Kelvin da Silva Nascimento]
+[Meu GitHub](https://github.com/gitkkelvin01)
